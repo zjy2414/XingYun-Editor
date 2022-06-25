@@ -1,4 +1,6 @@
-# start-xingyun 帮助文档
+![行云](https://7463-tcb-nkd87viq9wheg653bca0d-a8621b-1304207482.tcb.qcloud.la/XingYun/行云截图.png)
+
+# 行云（XingYun）- Serverless函数工作流可视化编辑器
 
 <p align="center" class="flex justify-center">
     <a href="https://www.serverless-devs.com" class="ml-1">
@@ -12,9 +14,11 @@
   </a>
 </p>
 
+-> [立即体验](https://xingyun.doyi.online) <-
+
 <description>
 
-> ***`Vue.js`是目前最为流行的 JavaScript 前端框架，此项目是基于 Vue3 的入门程序***
+> Serverless工作流在未来拥有巨大的潜力，主流云厂商都已上线了相关Serverless产品，但在行云出现之前，用户只能以DSL的方式编排函数工作流，行云（XingYun）为解决该问题而诞生。
 
 </description>
 
@@ -37,7 +41,7 @@
 
 - [:smiley_cat: 源代码](https://github.com/zjy2414/start-xingyun)
 
-- [:rocket: 预览](http://start-xingyun.vue-service.1451800943597498.cn-shanghai.fc.devsapp.net/)
+- [:rocket: 预览](https://xingyun.doyi.online)
 
 </codepre>
 
@@ -61,26 +65,36 @@
 
 <appdetail id="flushContent">
 
-# 应用详情
+## 简介（Introduction）
 
-本项目为 `Vue.js` 的入门程序，部署到阿里云 Serverless 平台（函数计算 FC）。
+Serverless工作流在未来拥有巨大的潜力，主流云厂商都已上线了相关Serverless产品，但在行云出现之前，用户只能以DSL的方式编排函数工作流，行云（XingYun）为解决该问题而诞生。
 
-Vue (读音 /vjuː/，类似于 view) 是一套用于构建用户界面的渐进式框架。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。另一方面，当与现代化的工具链以及各种支持类库结合使用时，Vue 也完全能够为复杂的单页应用提供驱动。
+目前，行云已经支持阿里云函数工作流可视化元素[包括pass, task, wait, parallel, choice(condition, default), foreach, succeed, fail]与FDL（工作流流程定义语言）的双向转换，即同时支持可视化拖拽方式创建和编辑FDL。
+
+可能还存在潜在bug，欢迎前来修复或贡献新功能～
+
+## 功能介绍（Features）
+
+* 可视化创建工作流： <br/>
+    全程可视化操作，只需拖拽即可定义流程，连线即可定义执行顺序。
+* 可视化编辑已有的工作流： <br/>
+    因为行云已经支持FDL与可视化元素间的双向转换，用户能够以与创建工作流相同的体验来编辑工作流。
+* 一键部署： <br/>
+    流程定义/修改完成后可以直接一键部署至阿里云函数工作流服务。
+
+## 未来（Todo）
+
+* 支持每个步骤的入参和出参设置
+* 支持腾讯云、华为云的函数工作流可视化编辑
 
 </appdetail>
 
 <devgroup>
 
-## 开发者社区
+## 技术支持
 
-您如果有关于错误的反馈或者未来的期待，您可以在 [Serverless Devs repo Issues](https://github.com/serverless-devs/serverless-devs/issues) 中进行反馈和交流。如果您想要加入我们的讨论组或者了解 FC 组件的最新动态，您可以通过以下渠道进行：
+微信(Wechat): zjy2414
 
-<p align="center">
-
-| <img src="https://serverless-article-picture.oss-cn-hangzhou.aliyuncs.com/1635407298906_20211028074819117230.png" width="130px" > | <img src="https://serverless-article-picture.oss-cn-hangzhou.aliyuncs.com/1635407044136_20211028074404326599.png" width="130px" > | <img src="https://serverless-article-picture.oss-cn-hangzhou.aliyuncs.com/1635407252200_20211028074732517533.png" width="130px" > |
-| --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| <center>微信公众号：`serverless`</center>                                                                                         | <center>微信小助手：`xiaojiangwh`</center>                                                                                        | <center>钉钉交流群：`33947367`</center>                                                                                           |
-
-</p>
+邮箱(E-Mail): zjy2414@outlook.com
 
 </devgroup>

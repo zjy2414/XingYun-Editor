@@ -15,8 +15,6 @@ services:
       pre-deploy:
         - run: yarn install
           path: ./code
-        - run: yarn run lint --fix
-          path: ./code
         - run: yarn build
           path: ./code
         - plugin: website-fc
